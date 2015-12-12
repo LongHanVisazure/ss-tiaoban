@@ -11,7 +11,7 @@ RUN apt-get install -y haproxy wget
 RUN service haproxy stop
 
 #删除相关配置文件
-#RUN rm /etc/haproxy/haproxy.cfg
+RUN rm /etc/haproxy/haproxy.cfg
 
 #下载并使用新的配置文件
 RUN wget http://shanlinfeiniao.oss-cn-qingdao.aliyuncs.com/haproxy.cfg 
