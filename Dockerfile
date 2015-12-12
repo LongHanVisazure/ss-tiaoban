@@ -14,7 +14,7 @@ RUN service haproxy stop
 RUN rm /etc/haproxy/haproxy.cfg
 
 #下载并使用新的配置文件
-RUN wget http://shanlinfeiniao.oss-cn-qingdao.aliyuncs.com/haproxy.cfg -P /etc/haproxy
+RUN wget http://shanlinfeiniao.oss-cn-qingdao.aliyuncs.com/haproxy.cfg 
 RUN haproxy -f haproxy.cfg 
 EXPOSE 9002
 
