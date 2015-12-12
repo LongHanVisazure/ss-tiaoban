@@ -3,7 +3,8 @@ MAINTAINER qida <sunqida@foxmail.com>
 
 #fakaixin
 RUN echo "deb http://ftp.us.debian.org/debian/ wheezy-backports main" >> /etc/apt/sources.list
-RUN apt-get update
+RUN apt-get updat
+RUN mkdir /usr/share/haproxye
 RUN apt-get install -y haproxy
 RUN apt-get install -y wget
 RUN rm /etc/haproxy/haproxy.cfg
